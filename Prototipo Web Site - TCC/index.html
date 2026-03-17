@@ -7,24 +7,154 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <img src="img/logo/logo.png" alt="Logo" class="nav-logo">
-        <div class="nav-links">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#process" class="nav-link">Process</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#contact" class="nav-link">Contact</a>
-        </div>
-        <button class="nav-button">Get in Touch</button>
-    </nav>
+    <div class="top-block" style="background-image: url('img/fundo/Fundo2.png'); background-size: cover; background-position: center -20%; background-repeat: no-repeat;">
+      <nav class="navbar">
+          <div class="nav-left">
+              <img src="img/logo/logo HELÍX.png" alt="Logo" class="nav-logo">
+          </div>
+          <button class="nav-toggle" aria-label="Abrir menu">☰</button>
+          <div class="nav-links" id="mobileNav">
+              <a href="#home" class="nav-link">Home</a>
+              <a href="#about" class="nav-link">Sobre</a>
+              <a href="#services" class="nav-link">Serviços</a>
+              <a href="#process" class="nav-link">Processo</a>
+              <a href="#contact" class="nav-link">Contato</a>
+              <button class="nav-button">Fale Conosco</button>
+          </div>
+      </nav>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Advanced <span class="highlight">System</span> Development</h1>
-            <p class="hero-subtitle">Scalable, secure, and innovative solutions for modern businesses.</p>
-            <button class="hero-button">Get a Free Consultation</button>
+        <section id="home" class="hero hero-home">
+            <div class="hero-content">
+                <p class="hero-tag">Soluções de software que aceleram seu desempenho digital</p>
+                <h1 class="hero-title">Construímos sistemas robustos para impulsionar seu crescimento.</h1>
+                <p class="hero-subtitle">Desenvolvimento sob medida, automação de processos, integração e suporte contínuo para equipes de alto desempenho.</p>
+                <div class="hero-actions">
+                    <button class="hero-button">Agendar Consultoria</button>
+                    <a href="#services" class="hero-secondary">Ver Serviços</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section id="about" class="about">
+        <div class="section-wrapper">
+            <span class="section-tag">Sobre Nós</span>
+            <h2 class="section-title">Transformamos Ideias em Soluções Digitais de Alto Impacto</h2>
+            <p class="section-text">A HELIX é uma empresa de tecnologia focada em resultados. Com uma equipe multidisciplinar, criamos sistemas sob medida, integrando inovação, rapidez e segurança para empresas que querem crescer com confiança. Nosso propósito é entregar tecnologia prática, fácil de usar e alinhada aos objetivos estratégicos dos clientes.</p>
         </div>
     </section>
+
+    <section id="services" class="services">
+        <div class="section-wrapper">
+            <span class="section-tag">Destaques</span>
+            <h2 class="section-title">Serviços que Aceleram sua Empresa</h2>
+            <div class="service-grid">
+                <article class="service-card">
+                    <h3>Desenvolvimento de Sistemas</h3>
+                    <p>Aplicativos web e mobile com arquitetura escalável e manutenção simplificada.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Automação de Processos</h3>
+                    <p>Integração e automação para reduzir esforços manuais e aumentar a produtividade.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Segurança e Performance</h3>
+                    <p>Auditoria e melhorias para proteger dados, otimizar desempenho e suportar crescimento.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="process">
+        <div class="section-wrapper">
+            <span class="section-tag">Processo</span>
+            <h2 class="section-title">Nosso workflow criativo em 4 passos</h2>
+            <div class="process-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-step">01</div>
+                    <div class="timeline-content">
+                        <h3>Discovery & Alinhamento</h3>
+                        <p>Imersão no negócio, personas e resultados esperados para desenhar a solução certa.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-step">02</div>
+                    <div class="timeline-content">
+                        <h3>Prototipagem</h3>
+                        <p>UX/UI, protótipos rápidos e feedbacks para validar fluxos antes de codificar.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-step">03</div>
+                    <div class="timeline-content">
+                        <h3>Desenvolvimento</h3>
+                        <p>Construção ágil, testes automáticos e deploy contínuo para entregas seguras.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-step">04</div>
+                    <div class="timeline-content">
+                        <h3>Escala & Suporte</h3>
+                        <p>Monitoramento, melhorias constantes e evolução para garantir crescimento real.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="section-wrapper cta-wrapper">
+            <div>
+                <span class="section-tag">Vamos Crescer Juntos</span>
+                <h2 class="section-title">Seu Projeto Merece Uma Entrega Profissional e Ágil</h2>
+                <p class="section-text">Fale com nosso time em menos de 24h e descubra como podemos resolver seu maior desafio digital com uma solução completa.</p>
+            </div>
+            <a href="#contact" class="cta-button">Solicitar Proposta</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-grid section-wrapper">
+            <div class="footer-brand">
+                <h3>HELIX</h3>
+                <p>Inovação em software para acelerar seu negócio com segurança e eficiência.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Serviços</h4>
+                <a href="#services">Desenvolvimento</a>
+                <a href="#services">Automação</a>
+                <a href="#services">Consultoria</a>
+            </div>
+            <div class="footer-links">
+                <h4>Empresa</h4>
+                <a href="#about">Sobre</a>
+                <a href="#process">Processo</a>
+                <a href="#contact">Contato</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p><strong>Email:</strong> contato@helix.com.br</p>
+                <p><strong>Telefone:</strong> +55 (11) 4002-8922</p>
+                <div class="social-row">
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="GitHub">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 HELIX. Todos os direitos reservados.</p>
+            <p>Política de privacidade · Termos de uso</p>
+        </div>
+    </footer>
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const mobileNav = document.getElementById('mobileNav');
+        navToggle.addEventListener('click', () => {
+            mobileNav.classList.toggle('open');
+            navToggle.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', mobileNav.classList.contains('open'));
+        });
+    </script>
 </body>
 </html>
