@@ -137,9 +137,11 @@ body {
     border: 1px solid rgba(255,255,255,0.24);
     color: #fff;
     font-weight: 500;
-    padding: 1rem 1.4rem;
+    padding: 15px;
     transition: all 0.2s ease;
     background: rgb(2, 5, 5);
+    width: auto;
+    display: inline-block;
 }
 
 .hero-button {
@@ -155,6 +157,8 @@ body {
     transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
     position: relative;
     overflow: hidden;
+    width: auto;
+    display: inline-block;
 }
 
 .hero-button::after {
@@ -294,7 +298,7 @@ body {
     gap: 0.5rem;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 100000;
 }
 
 .nav-left {
@@ -317,6 +321,7 @@ body {
 }
 
 .nav-toggle {
+    opacity: 0;
     margin-left: auto;
     background: rgba(255,255,255,0.08);
     border: 1px solid rgba(255,255,255,0.2);
@@ -607,27 +612,38 @@ body {
         flex-wrap: wrap;
         gap: 0.75rem;
         padding: 0.9rem 1.2rem;
+        position: relative;
     }
     .nav-toggle {
         display: inline-flex;
     }
+    .nav-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
     .nav-links {
-        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
         display: flex;
         flex-direction: column;
         align-items: stretch;
         gap: 0.45rem;
         justify-content: flex-start;
-        margin-top: 0.4rem;
-        border-radius: 10px;
-        background: rgba(5, 10, 24, 0.82);
+        margin-top: 0;
+        border-radius: 0 0 10px 10px;
+        background: rgba(5, 10, 24, 0.95);
         border: 1px solid rgba(255,255,255,0.08);
+        border-top: none;
         padding: 0.8rem;
         box-shadow: 0 16px 28px rgba(0,0,0,0.35);
         max-height: 0;
         overflow: hidden;
         opacity: 0;
         visibility: hidden;
+        z-index: 100001;
     }
     .nav-links.open {
         max-height: 480px;
@@ -699,11 +715,11 @@ body {
         gap: 0.5rem 0.8rem;
     }
     .nav-button {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0.65rem 1.2rem;
-        font-size: 0.9rem;
+        width: auto;
+        max-width: none;
+        margin: 0;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
     }
     .top-block {
         background-position: center -25% !important;
@@ -722,7 +738,7 @@ body {
         align-items: flex-start;
     }
     .cta-button {
-        width: 100%;
+        width: auto;
         text-align: center;
     }
     .footer-grid {
@@ -758,9 +774,13 @@ body {
         flex-direction: column;
         align-items: stretch;
     }
-    .hero-button, .hero-secondary {
-        width: 100%;
+    .hero-button {
+        width: auto;
         justify-content: center;
+    }
+    .hero-secondary {
+        width: auto;
+        display: inline-block;
     }
     .section-wrapper {
         width: 100%;
