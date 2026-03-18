@@ -379,6 +379,7 @@ body {
 }
 
 .nav-button {
+    margin-right: 50px;
     background: #0E97A4;
     background: linear-gradient(90deg,rgb(12, 116, 126) 6%, rgb(3, 102, 95) 56%);
     color: white;
