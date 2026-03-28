@@ -1,0 +1,298 @@
+/* ============================================
+   TechDev Solutions - Main Stylesheet
+   Version: 1.0.0
+
+   Architecture: ITCSS
+   Naming: BEM
+   ============================================ */
+
+/* === Settings === */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* === Tools === */
+/* (Mixins and functions if needed - using native CSS) */
+
+/* === Generic */
+@import '_reset.css';
+
+/* === Base */
+@import '_variables.css';
+@import '_typography.css';
+
+/* === Objects */
+@import '_layout.css';
+@import '_components.css';
+
+/* === Components */
+/* (Component-specific styles) */
+
+/* === Utilities */
+@import '_utilities.css';
+
+/* === Sections */
+@import '_sections.css';
+
+/* === Trumps */
+/* (High-specificity overrides if needed) */
+
+/* === Page-specific Styles === */
+
+/* Page Header */
+.page-header {
+    position: relative;
+    padding: var(--space-20) 0;
+    padding-top: calc(var(--space-20) + var(--space-16));
+    background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-light) 100%);
+    text-align: center;
+}
+
+.page-header__background {
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+    background-image:
+        radial-gradient(circle at 30% 70%, var(--color-primary) 0%, transparent 50%),
+        radial-gradient(circle at 70% 30%, var(--color-secondary) 0%, transparent 50%);
+}
+
+.page-header__content {
+    position: relative;
+    z-index: 1;
+}
+
+.page-header__title {
+    font-size: var(--text-4xl);
+    font-weight: var(--font-extrabold);
+    color: var(--color-white);
+    margin-bottom: var(--space-4);
+}
+
+.page-header__subtitle {
+    font-size: var(--text-lg);
+    color: var(--color-gray-400);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .page-header {
+        padding: var(--space-32) 0;
+        padding-top: calc(var(--space-32) + var(--space-16));
+    }
+
+    .page-header__title {
+        font-size: var(--text-5xl);
+    }
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+    font-size: var(--text-sm);
+}
+
+.breadcrumb__link {
+    color: var(--color-gray-400);
+    transition: color var(--transition-fast);
+}
+
+.breadcrumb__link:hover {
+    color: var(--color-primary);
+}
+
+.breadcrumb__separator {
+    color: var(--color-gray-600);
+}
+
+.breadcrumb__current {
+    color: var(--color-gray-300);
+}
+
+/* Service Detail Page */
+.service-detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-12);
+}
+
+@media (min-width: 1024px) {
+    .service-detail {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.service-detail__content h3 {
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+    color: var(--color-dark);
+    margin-top: var(--space-8);
+    margin-bottom: var(--space-4);
+}
+
+.service-detail__content h3:first-child {
+    margin-top: 0;
+}
+
+.service-detail__content p {
+    color: var(--color-gray-600);
+    line-height: var(--leading-relaxed);
+    margin-bottom: var(--space-4);
+}
+
+.service-detail__sidebar {
+    position: sticky;
+    top: calc(var(--header-height) + var(--space-6));
+    align-self: start;
+}
+
+.service-detail__cta {
+    padding: var(--space-8);
+    background-color: var(--color-primary);
+    border-radius: var(--radius-xl);
+    text-align: center;
+}
+
+.service-detail__cta-title {
+    font-size: var(--text-xl);
+    font-weight: var(--font-bold);
+    color: var(--color-dark);
+    margin-bottom: var(--space-2);
+}
+
+.service-detail__cta-text {
+    font-size: var(--text-sm);
+    color: var(--color-dark);
+    opacity: 0.8;
+    margin-bottom: var(--space-6);
+}
+
+/* Project Detail Page */
+.project-hero {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.project-hero__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-hero__overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: var(--space-12);
+    background: linear-gradient(to top, rgba(13, 5, 8, 0.95) 0%, transparent 100%);
+}
+
+.project-detail__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Team Section Alternative */
+.team--grid .team__grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+/* Contact Info Cards */
+.contact-info-card {
+    display: flex;
+    gap: var(--space-4);
+    padding: var(--space-6);
+    background-color: var(--color-gray-50);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-base);
+}
+
+.contact-info-card:hover {
+    background-color: var(--color-primary-100);
+}
+
+.contact-info-card__icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    border-radius: var(--radius-lg);
+    color: var(--color-primary);
+}
+
+.contact-info-card__icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.contact-info-card__title {
+    font-size: var(--text-base);
+    font-weight: var(--font-semibold);
+    color: var(--color-dark);
+    margin-bottom: var(--space-1);
+}
+
+.contact-info-card__text {
+    font-size: var(--text-sm);
+    color: var(--color-gray-600);
+}
+
+/* FAQ Section */
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+.faq-item__question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: var(--space-6) 0;
+    font-size: var(--text-lg);
+    font-weight: var(--font-semibold);
+    color: var(--color-dark);
+    text-align: left;
+    cursor: pointer;
+}
+
+.faq-item__icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    color: var(--color-primary);
+    transition: transform var(--transition-base);
+}
+
+.faq-item--open .faq-item__icon {
+    transform: rotate(180deg);
+}
+
+.faq-item__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-base);
+}
+
+.faq-item--open .faq-item__answer {
+    max-height: 500px;
+}
+
+.faq-item__answer-content {
+    padding-bottom: var(--space-6);
+    color: var(--color-gray-600);
+    line-height: var(--leading-relaxed);
+}

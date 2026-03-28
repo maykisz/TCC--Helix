@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de projetos da TechDev Solutions. Veja nossos trabalhos em desenvolvimento web, mobile, UI/UX e sistemas personalizados.">
+    <title>Projetos - TechDev Solutions</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2318D1C5'/%3E%3Ctext x='50' y='65' font-size='50'
+text-anchor='middle' fill='%230D0508'%3ETD%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="../index.html" class="logo" aria-label="TechDev - Página inicial">
+                    <div class="logo__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <div class="logo__text">
+                        <span class="logo__brand">TechDev</span>
+                        <span class="logo__tagline">Solutions</span>
+                    </div>
+                </a>
+
+                <nav class="nav" role="navigation" aria-label="Menu principal">
+                    <ul class="nav__list">
+                        <li><a href="../index.html" class="nav__link">Início</a></li>
+                        <li><a href="services.html" class="nav__link">Serviços</a></li>
+                        <li><a href="projects.html" class="nav__link nav__link--active">Projetos</a></li>
+                        <li><a href="about.html" class="nav__link">Sobre</a></li>
+                        <li><a href="contact.html" class="nav__link">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <a href="contact.html" class="btn btn--primary btn--sm">Fale Conosco</a>
+
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" aria-hidden="true">
+        <nav aria-label="Menu mobile">
+            <ul class="mobile-menu__list">
+                <li><a href="../index.html" class="mobile-menu__link">Início</a></li>
+                <li><a href="services.html" class="mobile-menu__link">Serviços</a></li>
+                <li><a href="projects.html" class="mobile-menu__link mobile-menu__link--active">Projetos</a></li>
+                <li><a href="about.html" class="mobile-menu__link">Sobre</a></li>
+                <li><a href="contact.html" class="mobile-menu__link">Contato</a></li>
+            </ul>
+            <div class="mobile-menu__cta">
+                <a href="contact.html" class="btn btn--primary btn--full">Fale Conosco</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="page-header__background"></div>
+            <div class="container">
+                <div class="page-header__content">
+                    <nav class="breadcrumb" aria-label="Breadcrumb">
+                        <a href="../index.html" class="breadcrumb__link">Início</a>
+                        <span class="breadcrumb__separator">/</span>
+                        <span class="breadcrumb__current">Projetos</span>
+                    </nav>
+                    <h1 class="page-header__title">Nossos Projetos</h1>
+                    <p class="page-header__subtitle">
+                        Conheça alguns dos projetos que desenvolvemos e veja como podemos
+                        ajudar a transformar sua ideia em realidade.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="section">
+            <div class="container">
+                <!-- Filter Buttons -->
+                <div class="projects__filters">
+                    <button class="filter-btn filter-btn--active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                    <button class="filter-btn" data-filter="saas">SaaS</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects__grid" id="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card" data-category="saas">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="Dashboard de Analytics">
+                        </div>
+                        <div class="project-card__overlay">
+                            <span class="project-card__category">SaaS</span>
+                            <h3 class="project-card__title">Plataforma de Analytics</h3>
+                            <p class="project-card__description">
+                                Dashboard completo para monitoramento de métricas de negócio em tempo real,
+                                com visualizações avançadas e relatórios automatizados.
+                            </p>
+                            <div class="project-card__stack">
+                                <span class="project-card__tech">React</span>
+                                <span class="project-card__tech">Node.js</span>
+                                <span class="project-card__tech">PostgreSQL</span>
+                                <span class="project-card__tech">D3.js</span>
+                            </div>
+                            <a href="project-detail.html" class="btn btn--primary btn--sm mt-4">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" data-category="mobile">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800" alt="Aplicativo de Delivery">
+                        </div>
+                        <div class="project-card__overlay">
+                            <span class="project-card__category">Mobile</span>
+                            <h3 class="project-card__title">App de Delivery</h3>
+                            <p class="project-card__description">
+                                Aplicativo completo para delivery de restaurantes com geolocalização,
+                                rastreamento em tempo real e integração com pagamentos.
+                            </p>
+                            <div class="project-card__stack">
+                                <span class="project-card__tech">React Native</span>
+                                <span class="project-card__tech">Firebase</span>
+                                <span class="project-card__tech">Maps API</span>
+                                <span class="project-card__tech">Stripe</span>
+                            </div>
+                            <a href="project-detail.html" class="btn btn--primary btn--sm mt-4">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" data-category="ecommerce">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800" alt="E-commerce Premium">
+                        </div>
+                        <div class="project-card__overlay">
+                            <span class="project-card__category">E-commerce</span>
+                            <h3 class="project-card__title">Loja Virtual Premium</h3>
+                            <p class="project-card__description">
+                                E-commerce completo com catálogo de produtos, carrinho inteligente,
+                                checkout otimizado e integração com gateways de pagamento.
+                            </p>
+                            <div class="project-card__stack">
+                                <span class="project-card__tech">Next.js</span>
+                                <span class="project-card__tech">Stripe</span>
+                                <span class="project-card__tech">Prisma</span>
+                                <span class="project-card__tech">Tailwind</span>
+                            </div>
+                            <a href="project-detail.html" class="btn btn--primary btn--sm mt-4">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800" alt="ERP System">
+                        </div>
+                        <div class="project-card__overlay">
+                            <span class="project-card__category">Web</span>
+                            <h3 class="project-card__title">Sistema ERP</h3>
+                            <p class="project-card__description">
+                                ERP completo para gestão empresarial com módulos de vendas, estoque,
+                                finanças e recursos humanos.
+                            </p>
+                            <div class="project-card__stack">
+                                <span class="project-card__tech">Vue.js</span>
+                                <span class="project-card__tech">Laravel</span>
+                                <span class="project-card__tech">MySQL</span>
+                                <span class="project-card__tech">Redis</span>
+                            </div>
+                            <a href="project-detail.html" class="btn btn--primary btn--sm mt-4">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="project-card" data-category="mobile">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=800" alt="App de Fitness">
+                        </div>
+                        <div class="project-card__overlay">
+                            <span class="project-card__category">Mobile</span>
+                            <h3 class="project-card__title">App de Fitness</h3>
+                            <p class="project-card__description">
+                                Aplicativo de treinos e nutrição com planos personalizados,
+                                monitoramento de progresso e comunidade engajada.
+                            </p>
+                            <div class="project-card__stack">
+                                <span class="project-card__tech">Flutter</span>
+                                <span class="project-card__tech">Dart</span>
+                                <span class="project-card__tech">Firebase</span>
+                                <span class="project-card__tech">HealthKit</span>
+                            </div>
+                            <a href="project-detail.html" class="btn btn--primary btn--sm mt-4">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="project-card" data-category="saas">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800" alt="CRM Platform">
+                        </div>
+                        <div class="project-card__overlay">
+                            <span class="project-card__category">SaaS</span>
+                            <h3 class="project-card__title">Plataforma CRM</h3>
+                            <p class="project-card__description">
+                                CRM completo para gestão de relacionamento com clientes,
+                                automação de marketing e pipeline de vendas.
+                            </p>
+                            <div class="project-card__stack">
+                                <span class="project-card__tech">React</span>
+                                <span class="project-card__tech">GraphQL</span>
+                                <span class="project-card__tech">MongoDB</span>
+                                <span class="project-card__tech">AWS</span>
+                            </div>
+                            <a href="project-detail.html" class="btn btn--primary btn--sm mt-4">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 7 -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800" alt="Portal Educacional">
+                        </div>
+                        <div class="project-card__overlay">
+                            <span class="project-card__category">Web</span>
+                            <h3 class="project-card__title">Portal Educacional</h3>
+                            <p class="project-card__description">
+                                Plataforma de e-learning com cursos online, ao vivo,
+                                avaliações e certificados digitais.
+                            </p>
+                            <div class="project-card__stack">
+                                <span class="project-card__tech">Next.js</span>
+                                <span class="project-card__tech">AWS</span>
+                                <span class="project-card__tech">Video.js</span>
+                                <span class="project-card__tech">TypeScript</span>
+                            </div>
+                            <a href="project-detail.html" class="btn btn--primary btn--sm mt-4">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 8 -->
+                    <article class="project-card" data-category="ecommerce">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=800" alt="Marketplace B2B">
+                        </div>
+                        <div class="project-card__overlay">
+                            <span class="project-card__category">E-commerce</span>
+                            <h3 class="project-card__title">Marketplace B2B</h3>
+                            <p class="project-card__description">
+                                Marketplace de negócios para negócios com cadastro de empresas,
+                                negociação direta e emissão de NF-e automatizada.
+                            </p>
+                            <div class="project-card__stack">
+                                <span class="project-card__tech">React</span>
+                                <span class="project-card__tech">Node.js</span>
+                                <span class="project-card__tech">Elasticsearch</span>
+                                <span class="project-card__tech">Docker</span>
+                            </div>
+                            <a href="project-detail.html" class="btn btn--primary btn--sm mt-4">Ver Detalhes</a>
+                        </div>
+                    </article>
+
+                    <!-- Project 9 -->
+                    <article class="project-card" data-category="web">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800" alt="Booking System">
+                        </div>
+                        <div class="project-card__overlay">
+                            <span class="project-card__category">Web</span>
+                            <h3 class="project-card__title">Sistema de Reservas</h3>
+                            <p class="project-card__description">
+                                Sistema de reservas para hotéis e hospedagens com calendário inteligente,
+                                múltiplas tarifas e integração com OTAs.
+                            </p>
+                            <div class="project-card__stack">
+                                <span class="project-card__tech">Vue.js</span>
+                                <span class="project-card__tech">Nuxt.js</span>
+                                <span class="project-card__tech">PostgreSQL</span>
+                                <span class="project-card__tech">PWA</span>
+                            </div>
+                            <a href="project-detail.html" class="btn btn--primary btn--sm mt-4">Ver Detalhes</a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Load More -->
+                <div class="text-center mt-12">
+                    <button class="btn btn--secondary btn--lg" id="load-more">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="1 4 1 10 7 10"></polyline>
+                            <path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"></path>
+                        </svg>
+                        Carregar Mais Projetos
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section cta">
+            <div class="cta__pattern"></div>
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Tem um Projeto em Mente?</h2>
+                    <p class="cta__description">
+                        Vamos discutir sua ideia e criar juntos uma solução que
+                        supere suas expectativas.
+                    </p>
+                    <div class="cta__actions">
+                        <a href="contact.html" class="btn btn--dark btn--lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            Iniciar Conversa
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="../index.html" class="footer__logo">
+                        <div class="logo__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <div class="logo__text">
+                            <span class="logo__brand">TechDev</span>
+                            <span class="logo__tagline">Solutions</span>
+                        </div>
+                    </a>
+                    <p class="footer__description">
+                        Transformamos ideias em soluções digitais inovadoras.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                        <a href="#" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07
+5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a>
+                        <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Navegação</h4>
+                    <ul class="footer__links">
+                        <li><a href="../index.html" class="footer__link">Início</a></li>
+                        <li><a href="services.html" class="footer__link">Serviços</a></li>
+                        <li><a href="projects.html" class="footer__link">Projetos</a></li>
+                        <li><a href="about.html" class="footer__link">Sobre</a></li>
+                        <li><a href="contact.html" class="footer__link">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Serviços</h4>
+                    <ul class="footer__links">
+                        <li><a href="services.html#web-development" class="footer__link">Desenvolvimento Web</a></li>
+                        <li><a href="services.html#mobile-development" class="footer__link">Desenvolvimento Mobile</a></li>
+                        <li><a href="services.html#ui-ux-design" class="footer__link">UI/UX Design</a></li>
+                        <li><a href="services.html#custom-systems" class="footer__link">Sistemas Personalizados</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Contato</h4>
+                    <div class="footer__contact-item">
+                        <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        <span>contato@techdev.com.br</span>
+                    </div>
+                    <div class="footer__contact-item">
+                        <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16
+16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        <span>(11) 3456-7890</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2024 TechDev Solutions. Todos os direitos reservados.</p>
+                <div class="footer__legal">
+                    <a href="#" class="footer__legal-link">Política de Privacidade</a>
+                    <a href="#" class="footer__legal-link">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>

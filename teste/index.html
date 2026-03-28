@@ -1,0 +1,682 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechDev Solutions - Desenvolvimento de websites, aplicações web e mobile. Transformamos suas ideias em soluções digitais de alto impacto.">
+    <meta name="keywords" content="desenvolvimento web, aplicações mobile, software, tecnologia, design UX">
+    <meta name="author" content="TechDev Solutions">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="TechDev Solutions - Desenvolvimento de Software">
+    <meta property="og:description" content="Transformamos suas ideias em soluções digitais de alto impacto.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://techdev.com.br">
+
+    <title>TechDev Solutions - Desenvolvimento de Software | Web, Mobile & UI/UX</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%2318D1C5'/%3E%3Ctext x='50' y='65' font-size='50'
+text-anchor='middle' fill='%230D0508'%3ETD%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="index.html" class="logo" aria-label="TechDev - Página inicial">
+                    <div class="logo__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <div class="logo__text">
+                        <span class="logo__brand">TechDev</span>
+                        <span class="logo__tagline">Solutions</span>
+                    </div>
+                </a>
+
+                <nav class="nav" role="navigation" aria-label="Menu principal">
+                    <ul class="nav__list">
+                        <li><a href="index.html" class="nav__link nav__link--active">Início</a></li>
+                        <li><a href="pages/services.html" class="nav__link">Serviços</a></li>
+                        <li><a href="pages/projects.html" class="nav__link">Projetos</a></li>
+                        <li><a href="pages/about.html" class="nav__link">Sobre</a></li>
+                        <li><a href="pages/contact.html" class="nav__link">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <a href="pages/contact.html" class="btn btn--primary btn--sm">Fale Conosco</a>
+
+                <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" aria-hidden="true">
+        <nav aria-label="Menu mobile">
+            <ul class="mobile-menu__list">
+                <li><a href="index.html" class="mobile-menu__link mobile-menu__link--active">Início</a></li>
+                <li><a href="pages/services.html" class="mobile-menu__link">Serviços</a></li>
+                <li><a href="pages/projects.html" class="mobile-menu__link">Projetos</a></li>
+                <li><a href="pages/about.html" class="mobile-menu__link">Sobre</a></li>
+                <li><a href="pages/contact.html" class="mobile-menu__link">Contato</a></li>
+            </ul>
+            <div class="mobile-menu__cta">
+                <a href="pages/contact.html" class="btn btn--primary btn--full">Fale Conosco</a>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__background"></div>
+            <div class="hero__grid-pattern"></div>
+
+            <div class="container">
+                <div class="hero__content">
+                    <span class="hero__label">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        Tecnologia de Ponta
+                    </span>
+
+                    <h1 class="hero__title">
+                        Transformamos <span class="hero__title-accent">Ideias</span> em<br>
+                        Soluções Digitais
+                    </h1>
+
+                    <p class="hero__subtitle">
+                        Somos uma equipe especializada em desenvolvimento de software, criando websites,
+                        aplicações web e mobile que impulsionam negócios para o próximo nível.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a href="pages/contact.html" class="btn btn--primary btn--lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            Iniciar Projeto
+                        </a>
+                        <a href="pages/projects.html" class="btn btn--secondary btn--lg">
+                            Ver Projetos
+                        </a>
+                    </div>
+
+                    <div class="hero__stats">
+                        <div class="hero__stat">
+                            <div class="hero__stat-value" data-counter="150">0</div>
+                            <div class="hero__stat-label">Projetos Entregues</div>
+                        </div>
+                        <div class="hero__stat">
+                            <div class="hero__stat-value" data-counter="50">0</div>
+                            <div class="hero__stat-label">Clientes Satisfeitos</div>
+                        </div>
+                        <div class="hero__stat">
+                            <div class="hero__stat-value" data-counter="8">0</div>
+                            <div class="hero__stat-label">Anos de Experiência</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature Cards -->
+            <div class="hero__features">
+                <div class="hero__feature-card">
+                    <div class="hero__feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <span class="hero__feature-text">Código Seguro</span>
+                </div>
+                <div class="hero__feature-card">
+                    <div class="hero__feature-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <span class="hero__feature-text">Entrega no Prazo</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section features">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <span class="label">Por que nos escolher</span>
+                    <h2 class="section__title">Diferenciais que Fazem a Diferença</h2>
+                    <p class="section__subtitle">
+                        Combinamos expertise técnica com visão de negócio para entregar soluções
+                        que realmente geram valor para nossos clientes.
+                    </p>
+                </div>
+
+                <div class="features__grid">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <div class="feature-card__content">
+                            <h3 class="feature-card__title">Código Seguro</h3>
+                            <p class="feature-card__description">
+                                Implementamos as melhores práticas de segurança, protegendo seus dados
+                                e os dados de seus clientes contra ameaças digitais.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polyline>
+                            </svg>
+                        </div>
+                        <div class="feature-card__content">
+                            <h3 class="feature-card__title">Alta Performance</h3>
+                            <p class="feature-card__description">
+                                Otimizamos cada linha de código para garantir que sua aplicação
+                                seja rápida e responsiva em qualquer dispositivo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="3" y1="9" x2="21" y2="9"></line>
+                                <line x1="9" y1="21" x2="9" y2="9"></line>
+                            </svg>
+                        </div>
+                        <div class="feature-card__content">
+                            <h3 class="feature-card__title">Design Responsivo</h3>
+                            <p class="feature-card__description">
+                                Interfaces que se adaptam perfeitamente a qualquer tamanho de tela,
+                                proporcionando a melhor experiência em desktop e mobile.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="feature-card__content">
+                            <h3 class="feature-card__title">Suporte Dedicado</h3>
+                            <p class="feature-card__description">
+                                Nossa equipe está sempre disponível para oferecer suporte técnico
+                                e manter sua aplicação funcionando perfeitamente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview -->
+        <section class="section">
+            <div class="container">
+                <div class="section__header">
+                    <span class="label">O que fazemos</span>
+                    <h2 class="section__title">Nossos Serviços</h2>
+                    <p class="section__description">
+                        Oferecemos soluções completas em desenvolvimento de software, desde a concepção
+                        até a entrega e manutenção do seu projeto.
+                    </p>
+                </div>
+
+                <div class="services-preview__grid">
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Desenvolvimento Web</h3>
+                        <p class="service-card__description">
+                            Websites institucionais, e-commerces, portais e aplicações web sob medida
+                            para atender às necessidades específicas do seu negócio.
+                        </p>
+                        <div class="service-card__features">
+                            <div class="service-card__feature">
+                                <svg class="service-card__feature-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Sites institucionais responsivos</span>
+                            </div>
+                            <div class="service-card__feature">
+                                <svg class="service-card__feature-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>E-commerces completos</span>
+                            </div>
+                            <div class="service-card__feature">
+                                <svg class="service-card__feature-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Sistemas web personalizados</span>
+                            </div>
+                        </div>
+                        <a href="pages/services.html" class="btn btn--secondary mt-6">Saiba mais</a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Desenvolvimento Mobile</h3>
+                        <p class="service-card__description">
+                            Aplicativos nativos e cross-platform para iOS e Android, garantindo
+                            alta performance e excelente experiência do usuário.
+                        </p>
+                        <div class="service-card__features">
+                            <div class="service-card__feature">
+                                <svg class="service-card__feature-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Apps para iOS e Android</span>
+                            </div>
+                            <div class="service-card__feature">
+                                <svg class="service-card__feature-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>React Native & Flutter</span>
+                            </div>
+                            <div class="service-card__feature">
+                                <svg class="service-card__feature-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Publicação nas stores</span>
+                            </div>
+                        </div>
+                        <a href="pages/services.html" class="btn btn--secondary mt-6">Saiba mais</a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">UI/UX Design</h3>
+                        <p class="service-card__description">
+                            Design de interfaces intuitivas e experiências memoráveis,
+                            seguindo as melhores práticas de usabilidade e acessibilidade.
+                        </p>
+                        <div class="service-card__features">
+                            <div class="service-card__feature">
+                                <svg class="service-card__feature-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Wireframes e protótipos</span>
+                            </div>
+                            <div class="service-card__feature">
+                                <svg class="service-card__feature-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Design system completo</span>
+                            </div>
+                            <div class="service-card__feature">
+                                <svg class="service-card__feature-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>Testes de usabilidade</span>
+                            </div>
+                        </div>
+                        <a href="pages/services.html" class="btn btn--secondary mt-6">Saiba mais</a>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5"></path>
+                                <path d="M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <h3 class="service-card__title">Sistemas Personalizados</h3>
+                        <p class="service-card__description">
+                            Soluções sob medida para automatizar processos, gerenciar dados
+                            e otimizar as operações do seu negócio.
+                        </p>
+                        <div class="service-card__features">
+                            <div class="service-card__feature">
+                                <svg class="service-card__feature-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>ERPs sob medida</span>
+                            </div>
+                            <div class="service-card__feature">
+                                <svg class="service-card__feature-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>CRMs personalizados</span>
+                            </div>
+                            <div class="service-card__feature">
+                                <svg class="service-card__feature-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                                <span>APIs e integrações</span>
+                            </div>
+                        </div>
+                        <a href="pages/services.html" class="btn btn--secondary mt-6">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Preview -->
+        <section class="section" style="background-color: var(--color-gray-50);">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <span class="label">Nosso Trabalho</span>
+                    <h2 class="section__title">Projetos Recentes</h2>
+                    <p class="section__subtitle">
+                        Conheça alguns dos projetos que desenvolvemos e veja como podemos
+                        ajudar a transformar sua ideia em realidade.
+                    </p>
+                </div>
+
+                <div class="projects__grid">
+                    <article class="project-card" data-category="web">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="Dashboard de analytics">
+                        </div>
+                        <div class="project-card__overlay">
+                            <span class="project-card__category">Web App</span>
+                            <h3 class="project-card__title">Plataforma de Analytics</h3>
+                            <p class="project-card__description">
+                                Dashboard completo para monitoramento de métricas de negócio em tempo real.
+                            </p>
+                            <div class="project-card__stack">
+                                <span class="project-card__tech">React</span>
+                                <span class="project-card__tech">Node.js</span>
+                                <span class="project-card__tech">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="mobile">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800" alt="Aplicativo mobile">
+                        </div>
+                        <div class="project-card__overlay">
+                            <span class="project-card__category">Mobile</span>
+                            <h3 class="project-card__title">App de Delivery</h3>
+                            <p class="project-card__description">
+                                Aplicativo completo para delivery de restaurantes com geolocalização.
+                            </p>
+                            <div class="project-card__stack">
+                                <span class="project-card__tech">React Native</span>
+                                <span class="project-card__tech">Firebase</span>
+                                <span class="project-card__tech">Maps API</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web">
+                        <div class="project-card__image">
+                            <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800" alt="E-commerce">
+                        </div>
+                        <div class="project-card__overlay">
+                            <span class="project-card__category">E-commerce</span>
+                            <h3 class="project-card__title">Loja Virtual Premium</h3>
+                            <p class="project-card__description">
+                                E-commerce completo com catálogo, carrinho e integração com paggateis.
+                            </p>
+                            <div class="project-card__stack">
+                                <span class="project-card__tech">Next.js</span>
+                                <span class="project-card__tech">Stripe</span>
+                                <span class="project-card__tech">Prisma</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="pages/projects.html" class="btn btn--secondary btn--lg">
+                        Ver Todos os Projetos
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section testimonials">
+            <div class="container">
+                <div class="section__header section__header--center">
+                    <span class="label" style="color: var(--color-primary);">Depoimentos</span>
+                    <h2 class="section__title" style="color: var(--color-white);">O Que Nossos Clientes Dizem</h2>
+                </div>
+
+                <div class="testimonials__grid">
+                    <div class="testimonial-card">
+                        <p class="testimonial-card__quote">
+                            "A TechDev superou todas as nossas expectativas. O projeto foi entregue
+                            no prazo, com qualidade excepcional e um suporte incrível durante todo o processo."
+                        </p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="Ricardo Mendes">
+                            </div>
+                            <div>
+                                <div class="testimonial-card__name">Ricardo Mendes</div>
+                                <div class="testimonial-card__role">CEO, Innovatech</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <p class="testimonial-card__quote">
+                            "Profissionalismo e expertise técnica de alto nível. Nossa plataforma
+                            de e-commerce tripled our sales within three months."
+                        </p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="Marina Costa">
+                            </div>
+                            <div>
+                                <div class="testimonial-card__name">Marina Costa</div>
+                                <div class="testimonial-card__role">Diretora, StyleHouse</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <p class="testimonial-card__quote">
+                            "O app que desenvolveram para nossa startup ficou phenomenal.
+                            Simple to use, powerful, and beautifully designed."
+                        </p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100" alt="Lucas Oliveira">
+                            </div>
+                            <div>
+                                <div class="testimonial-card__name">Lucas Oliveira</div>
+                                <div class="testimonial-card__role">Founder, HealthTech</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section cta">
+            <div class="cta__pattern"></div>
+            <div class="container">
+                <div class="cta__content">
+                    <h2 class="cta__title">Pronto para Transformar sua Ideia em Realidade?</h2>
+                    <p class="cta__description">
+                        Entre em contato conosco e descubra como podemos ajudar a levar
+                        seu negócio para o próximo nível com tecnologia de ponta.
+                    </p>
+                    <div class="cta__actions">
+                        <a href="pages/contact.html" class="btn btn--dark btn--lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            Iniciar Conversa
+                        </a>
+                        <a href="pages/services.html" class="btn btn--white btn--lg">
+                            Nossos Serviços
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo">
+                        <div class="logo__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                        </div>
+                        <div class="logo__text">
+                            <span class="logo__brand">TechDev</span>
+                            <span class="logo__tagline">Solutions</span>
+                        </div>
+                    </a>
+                    <p class="footer__description">
+                        Transformamos ideias em soluções digitais inovadoras.
+                        Desenvolvimento de software com qualidade e excelência.
+                    </p>
+                    <div class="footer__social">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="GitHub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1
+5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Navegação</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html" class="footer__link">Início</a></li>
+                        <li><a href="pages/services.html" class="footer__link">Serviços</a></li>
+                        <li><a href="pages/projects.html" class="footer__link">Projetos</a></li>
+                        <li><a href="pages/about.html" class="footer__link">Sobre</a></li>
+                        <li><a href="pages/contact.html" class="footer__link">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Serviços</h4>
+                    <ul class="footer__links">
+                        <li><a href="pages/services.html" class="footer__link">Desenvolvimento Web</a></li>
+                        <li><a href="pages/services.html" class="footer__link">Desenvolvimento Mobile</a></li>
+                        <li><a href="pages/services.html" class="footer__link">UI/UX Design</a></li>
+                        <li><a href="pages/services.html" class="footer__link">Sistemas Personalizados</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h4 class="footer__title">Contato</h4>
+                    <div class="footer__contact-item">
+                        <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>contato@techdev.com.br</span>
+                    </div>
+                    <div class="footer__contact-item">
+                        <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09
+9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <span>(11) 3456-7890</span>
+                    </div>
+                    <div class="footer__contact-item">
+                        <svg class="footer__contact-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>São Paulo, SP - Brasil</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2024 TechDev Solutions. Todos os direitos reservados.
+                </p>
+                <div class="footer__legal">
+                    <a href="#" class="footer__legal-link">Política de Privacidade</a>
+                    <a href="#" class="footer__legal-link">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
+
