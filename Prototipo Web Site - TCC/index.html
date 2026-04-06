@@ -1,167 +1,1010 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HELIX - Home</title>
+    <meta name="description" content="HELIX - Desenvolvimento de software sob medida, automação de processos e soluções digitais de alto impacto para empresas.">
+    <meta name="theme-color" content="#0D9488">
+
+    <title>HELIX - Software que Acelera Seus Resultados</title>
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
 </head>
 <body>
-    <div class="announcement-bar">
-        <p class="announcement-text">TRANSFORMANDO IDEIAS EM SOLUÇÕES DIGITAIS | CONSULTA GRATUITA</p>
-    </div>
-    <div class="top-block" style="background-image: url('img/fundo/fundo-teste.png'); background-size: cover; background-position: center 80% -20%; background-repeat: no-repeat;">
-      <nav class="navbar">
-          <div class="nav-left">
-              <img src="img/logo/Hélix-Logo-7-Photoroom.png" width="130px" margin-left="20px" alt="Logo Hélix">
-          </div>
-          <div class="nav-links" id="mobileNav">
-              <a href="#home" class="nav-link">Home</a>
-              <a href="#about" class="nav-link">Serviços</a>
-              <a href="#services" class="nav-link">Projetos</a>
-              <a href="#process" class="nav-link">Sobre-Nós</a>
-              <a href="#contact" class="nav-link">Blog</a>
-          </div>
-          <button class="nav-button">Fale Conosco</button>
-          <button class="nav-toggle" aria-label="Abrir menu">☰</button>
-      </nav>
+    <!-- Skip to content (A11y) -->
+    <a href="#main" class="skip-link">Pular para o conteúdo principal</a>
 
-        <section id="home" class="hero hero-home">
-            <div class="hero-content">
-                <p class="hero-tag">Soluções de software que aceleram seu desempenho digital</p>
-                <h1 class="hero-title">Na Hélix, nascem novas estrelas.</h1>
-                <p class="hero-subtitle">Desenvolvimento sob medida, automação de processos, integração e suporte contínuo para equipes de alto desempenho.</p>
-                <div class="hero-actions">
-                    <button class="hero-button">Agendar Consultoria</button>
-                    <a href="#services" class="hero-secondary">Ver Serviços</a>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container" role="navigation" aria-label="Navegação principal">
+            <a href="/" class="nav-brand" aria-label="HELIX - Página inicial">
+                <img src="./img/logo/imagem_2026-04-06_113404796-Photoroom.png" alt="HELIX" width="125px">
+            </a>
+
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="#solutions" class="nav-link" role="menuitem">Soluções</a></li>
+                <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projetos</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">Sobre</a></li>
+                <li role="none"><a href="#blog" class="nav-link" role="menuitem">Blog</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-ghost">
+                    <span>Entrar em contato</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMenu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu-content">
+            <nav aria-label="Menu mobile">
+                <ul class="mobile-nav-list">
+                    <li><a href="#home" class="mobile-nav-link">
+                        <span class="mobile-nav-number">01</span>
+                        <span class="mobile-nav-text">Home</span>
+                    </a></li>
+                    <li><a href="#solutions" class="mobile-nav-link">
+                        <span class="mobile-nav-number">02</span>
+                        <span class="mobile-nav-text">Soluções</span>
+                    </a></li>
+                    <li><a href="#projects" class="mobile-nav-link">
+                        <span class="mobile-nav-number">03</span>
+                        <span class="mobile-nav-text">Projetos</span>
+                    </a></li>
+                    <li><a href="#about" class="mobile-nav-link">
+                        <span class="mobile-nav-number">04</span>
+                        <span class="mobile-nav-text">Sobre</span>
+                    </a></li>
+                    <li><a href="#blog" class="mobile-nav-link">
+                        <span class="mobile-nav-number">05</span>
+                        <span class="mobile-nav-text">Blog</span>
+                    </a></li>
+                </ul>
+                <div class="mobile-menu-footer">
+                    <a href="#contact" class="btn btn-primary btn-full">
+                        <span>Fale Conosco</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <!-- Background Effects -->
+            <div class="hero-bg" aria-hidden="true">
+                <div class="hero-gradient"></div>
+                <div class="hero-grid"></div>
+                <div class="hero-orb hero-orb-1"></div>
+                <div class="hero-orb hero-orb-2"></div>
+                <div class="hero-orb hero-orb-3"></div>
+            </div>
+
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <!-- Badge -->
+                    <div class="hero-badge" data-animate="fade-up">
+                        <span class="badge-dot"></span>
+                        <span class="badge-text">Nova plataforma de automação disponível</span>
+                        <svg class="badge-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+
+                    <!-- Title -->
+                    <h1 id="hero-title" class="hero-title" data-animate="fade-up" data-delay="100">
+                        Software que transforma sua empresa em uma
+                        <span class="gradient-text">máquina de resultados</span>
+                    </h1>
+
+                    <!-- Description -->
+                    <p class="hero-description" data-animate="fade-up" data-delay="200">
+                        A HELIX cria soluções tecnológicas sob medida para empresas que buscam
+                        crescimento acelerado. Desenvolvimento de sistemas, automação inteligente
+                        e suporte dedicado para times de alto desempenho.
+                    </p>
+
+                    <!-- Actions -->
+                    <div class="hero-actions" data-animate="fade-up" data-delay="300">
+                        <a href="#contact" class="btn btn-primary btn-lg">
+                            <span>Agendar Consultoria Gratuita</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                        <a href="#solutions" class="btn btn-secondary btn-lg">
+                            <span>Ver Soluções</span>
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="hero-stats" data-animate="fade-up" data-delay="400">
+                        <div class="stat">
+                            <span class="stat-value">500+</span>
+                            <span class="stat-label">Projetos Entregues</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-value">98%</span>
+                            <span class="stat-label">Satisfação</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat">
+                            <span class="stat-value">24h</span>
+                            <span class="stat-label">Tempo de Resposta</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual -->
+                <div class="hero-visual" data-animate="fade-left" data-delay="200">
+                    <div class="hero-card hero-card-main">
+                        <div class="card-header">
+                            <div class="card-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <span class="card-title">Dashboard Analytics</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-placeholder">
+                                <div class="chart-bars">
+                                    <div class="chart-bar" style="--height: 60%"></div>
+                                    <div class="chart-bar" style="--height: 80%"></div>
+                                    <div class="chart-bar" style="--height: 45%"></div>
+                                    <div class="chart-bar" style="--height: 90%"></div>
+                                    <div class="chart-bar" style="--height: 70%"></div>
+                                    <div class="chart-bar" style="--height: 55%"></div>
+                                    <div class="chart-bar active" style="--height: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="card-metrics">
+                                <div class="metric">
+                                    <span class="metric-value">+127%</span>
+                                    <span class="metric-label">Crescimento</span>
+                                </div>
+                                <div class="metric">
+                                    <span class="metric-value">2.4s</span>
+                                    <span class="metric-label">Load Time</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-card hero-card-float hero-card-1">
+                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                        <div class="card-text">
+                            <span class="text-value">99.9%</span>
+                            <span class="text-label">Uptime</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-card hero-card-float hero-card-2">
+                        <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        <div class="card-text">
+                            <span class="text-value">100%</span>
+                            <span class="text-label">Seguro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator" aria-hidden="true">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span class="scroll-text">Role para explorar</span>
+            </div>
+        </section>
+
+        <!-- Logos Section -->
+        <section class="logos" aria-label="Clientes que confiam">
+            <div class="container">
+                <p class="logos-text">Empresas Parceiras:</p>
+                <div class="logos-grid">
+                    <div class="logo-item">
+                        <div class="logo-name">TechCorp</div>
+                        <img src="./img/elementos/exLogo.png" alt="TechCorp" class="logo-image">
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-name">Inovação</div>
+                        <img src="./img/elementos/exLogo.png" alt="Inovação" class="logo-image">
+                    </div>
+                    <div class="logo-item">
+                        <div class="logo-name">StartUp+</div>
+                        <img src="./img/elementos/exLogo.png" alt="StartUp+" class="logo-image">
+                    </div>
                 </div>
             </div>
         </section>
-    </div>
 
-    <section id="about" class="about">
-        <div class="section-wrapper">
-            <span class="section-tag">Sobre Nós</span>
-            <h2 class="section-title">Transformamos Ideias em Soluções Digitais de Alto Impacto</h2>
-            <div class="sobreLogo">
-                <p class="section-text">A HELIX é uma empresa de tecnologia focada em resultados. Com uma equipe multidisciplinar, criamos sistemas sob medida, integrando inovação, rapidez e segurança para empresas que querem crescer com confiança. Nosso propósito é entregar tecnologia prática, fácil de usar e alinhada aos objetivos estratégicos dos clientes.</p>
-                <img src="img/logo/Hélix-Logo-7-Photoroom.png" width="250px" margin-left="20px" alt="Logo Hélix" >
-            </div>     
-        </div>
-    </section>
+        <!-- Solutions Section -->
+        <section class="solutions section" id="solutions" aria-labelledby="solutions-title">
+            <div class="container">
+                <header class="section-header" data-animate="fade-up">
+                    <span class="section-badge">Nossas Soluções</span>
+                    <h2 id="solutions-title" class="section-title">
+                        Tudo que sua empresa precisa para
+                        <span class="gradient-text">escalar</span>
+                    </h2>
+                    <p class="section-description">
+                        Oferecemos um ecossistema completo de soluções tecnológicas,
+                        desde o desenvolvimento de sistemas até automação de processos.
+                    </p>
+                </header>
 
-    <section id="services" class="services">
-        <div class="section-wrapper">
-            <span class="section-tag">Destaques</span>
-            <h2 class="section-title">Serviços que Aceleram sua Empresa</h2>
-            <div class="service-grid">
-                <article class="service-card">
-                    <h3>Desenvolvimento de Sistemas</h3>
-                    <p>Aplicativos web e mobile com arquitetura escalável e manutenção simplificada.</p>
-                </article>
-                <article class="service-card">
-                    <h3>Automação de Processos</h3>
-                    <p>Integração e automação para reduzir esforços manuais e aumentar a produtividade.</p>
-                </article>
-                <article class="service-card">
-                    <h3>Segurança e Performance</h3>
-                    <p>Auditoria e melhorias para proteger dados, otimizar desempenho e suportar crescimento.</p>
-                </article>
+                <div class="solutions-grid">
+                    <!-- Solution 1 -->
+                    <article class="solution-card" data-animate="fade-up" data-delay="100">
+                        <div class="solution-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            </svg>
+                        </div>
+                        <div class="solution-content">
+                            <h3 class="solution-title">Desenvolvimento de Sistemas</h3>
+                            <p class="solution-description">
+                                Aplicativos web e mobile sob medida, com arquitetura escalável
+                                e código de fácil manutenção. Do conceito ao deploy.
+                            </p>
+                            <ul class="solution-features">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span>React, Vue, Angular</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span>Node.js, Python, Go</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span>AWS, Azure, GCP</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="solution-link">
+                            <span>Saber mais</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Solution 2 -->
+                    <article class="solution-card" data-animate="fade-up" data-delay="200">
+                        <div class="solution-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                            </svg>
+                        </div>
+                        <div class="solution-content">
+                            <h3 class="solution-title">Automação de Processos</h3>
+                            <p class="solution-description">
+                                Elimine tarefas manuais e repetitiveis com fluxos automatizados.
+                                Aumente produtividade e reduza erros em até 80%.
+                            </p>
+                            <ul class="solution-features">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span> RPA e Chatbots</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span> Integrações API</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span> Workflow Automation</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="solution-link">
+                            <span>Saber mais</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Solution 3 -->
+                    <article class="solution-card" data-animate="fade-up" data-delay="300">
+                        <div class="solution-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622
+0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <div class="solution-content">
+                            <h3 class="solution-title">Segurança & Performance</h3>
+                            <p class="solution-description">
+                                Proteja seus dados e otimize performance. Auditorias completas,
+                                SSL, backup automático e monitoramento 24/7.
+                            </p>
+                            <ul class="solution-features">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span> Pentest & Auditoria</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span> CDN & Cache</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span> SLA 99.9%</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="solution-link">
+                            <span>Saber mais</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="process" class="process">
-        <div class="section-wrapper">
-            <span class="section-tag">Processo</span>
-            <h2 class="section-title">Nosso workflow criativo em 4 passos</h2>
-            <div class="process-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-step">01</div>
-                    <div class="timeline-content">
-                        <h3>Discovery & Alinhamento</h3>
-                        <p>Imersão no negócio, personas e resultados esperados para desenhar a solução certa.</p>
+        <!-- Process Section -->
+        <section class="process section" id="process" aria-labelledby="process-title">
+            <div class="container">
+                <header class="section-header" data-animate="fade-up">
+                    <span class="section-badge">Como Trabalhamos</span>
+                    <h2 id="process-title" class="section-title">
+                        Do zero ao deploy em
+                        <span class="gradient-text">4 etapas</span>
+                    </h2>
+                    <p class="section-description">
+                        Metodologia ágil comprovada para entregar projetos de alta qualidade
+                        no menor tempo possível.
+                    </p>
+                </header>
+
+                <div class="process-timeline">
+                    <div class="timeline-connector" aria-hidden="true"></div>
+
+                    <article class="timeline-step" data-animate="fade-up" data-delay="100">
+                        <div class="step-number">01</div>
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/>
+                                    <path d="m21 21-4.35-4.35"/>
+                                </svg>
+                            </div>
+                            <h3 class="step-title">Discovery & Alinhamento</h3>
+                            <p class="step-description">
+                                Mergulhamos no seu negócio para entender objetivos, personas
+                                e métricas de sucesso do projeto.
+                            </p>
+                            <div class="step-duration">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span>1-2 semanas</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-step" data-animate="fade-up" data-delay="200">
+                        <div class="step-number">02</div>
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 19l7-7 3 3-7 7-3-3z"/>
+                                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/>
+                                    <path d="M2 2l7.586 7.586"/>
+                                </svg>
+                            </div>
+                            <h3 class="step-title">Prototipagem</h3>
+                            <p class="step-description">
+                                Criamos protótipos interativos ewireframes para validar
+                                fluxos e UX antes de desenvolver.
+                            </p>
+                            <div class="step-duration">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span>2-3 semanas</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-step" data-animate="fade-up" data-delay="300">
+                        <div class="step-number">03</div>
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                                </svg>
+                            </div>
+                            <h3 class="step-title">Desenvolvimento</h3>
+                            <p class="step-description">
+                                Código limpo, testes automatizados e deploy contínuo
+                                para garantir qualidade e velocidade.
+                            </p>
+                            <div class="step-duration">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span>4-12 semanas</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="timeline-step" data-animate="fade-up" data-delay="400">
+                        <div class="step-number">04</div>
+                        <div class="step-card">
+                            <div class="step-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                                </svg>
+                            </div>
+                            <h3 class="step-title">Escala & Suporte</h3>
+                            <p class="step-description">
+                                Monitoramento contínuo, melhorias iterativas e suporte
+                                dedicado para seu crescimento.
+                            </p>
+                            <div class="step-duration">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                                <span>Contínuo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats" aria-label="Nossos números">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-animate="fade-up">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <span class="stat-number" data-count="8">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Anos de experiência</span>
+                    </div>
+                    <div class="stat-item" data-animate="fade-up" data-delay="100">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                            </svg>
+                        </div>
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Clientes satisfeitos</span>
+                    </div>
+                    <div class="stat-item" data-animate="fade-up" data-delay="200">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                            </svg>
+                        </div>
+                        <span class="stat-number" data-count="500">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Projetos entregues</span>
+                    </div>
+                    <div class="stat-item" data-animate="fade-up" data-delay="300">
+                        <div class="stat-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <span class="stat-number" data-count="99">0</span>
+                        <span class="stat-suffix">%</span>
+                        <span class="stat-label">Taxa de sucesso</span>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-step">02</div>
-                    <div class="timeline-content">
-                        <h3>Prototipagem</h3>
-                        <p>UX/UI, protótipos rápidos e feedbacks para validar fluxos antes de codificar.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-step">03</div>
-                    <div class="timeline-content">
-                        <h3>Desenvolvimento</h3>
-                        <p>Construção ágil, testes automáticos e deploy contínuo para entregas seguras.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-step">04</div>
-                    <div class="timeline-content">
-                        <h3>Escala & Suporte</h3>
-                        <p>Monitoramento, melhorias constantes e evolução para garantir crescimento real.</p>
-                    </div>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="cta">
-        <div class="section-wrapper cta-wrapper">
-            <div>
-                <span class="section-tag">Vamos Crescer Juntos</span>
-                <h2 class="section-title">Seu Projeto Merece Uma Entrega Profissional e Ágil</h2>
-                <p class="section-text">Fale com nosso time em menos de 24h e descubra como podemos resolver seu maior desafio digital com uma solução completa.</p>
-            </div>
-            <a href="#contact" class="cta-button">Solicitar Proposta</a>
-        </div>
-    </section>
+        <!-- About Section -->
+        <section class="about section" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content" data-animate="fade-right">
+                        <span class="section-badge">Sobre a HELIX</span>
+                        <h2 id="about-title" class="section-title">
+                            Tecnologia com propósito,
+                            <span class="gradient-text">resultados com paixão</span>
+                        </h2>
+                        <p class="about-text">
+                            A HELIX nasceu da convicção de que tecnologia deve ser uma força
+                            transformadora, não uma barreira. Somos uma equipe multidisciplinar
+                            de desenvolvedores, designers e estrategistas unidos pelo mesmo objetivo:
+                            criar soluções que realmente resolvem problemas.
+                        </p>
 
-    <footer class="site-footer">
-        <div class="footer-grid section-wrapper">
-            <div class="footer-brand">
-                <img src="./img/logo/Hélix-Logo-7-Photoroom.png" alt="" width="100px">
-                <p>Inovação em software para acelerar seu negócio com segurança e eficiência.</p>
-            </div>
-            <div class="footer-links">
-                <h4>Serviços</h4>
-                <a href="#services">Desenvolvimento</a>
-                <a href="#services">Automação</a>
-                <a href="#services">Consultoria</a>
-            </div>
-            <div class="footer-links">
-                <h4>Empresa</h4>
-                <a href="#about">Sobre</a>
-                <a href="#process">Processo</a>
-                <a href="#contact">Contato</a>
-            </div>
-            <div class="footer-contact">
-                <h4>Contato</h4>
-                <p><strong>Email:</strong> contato@helix.com.br</p>
-                <p><strong>Telefone:</strong> +55 (11) 4002-8922</p>
-                <div class="social-row">
-                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                    <a href="#" aria-label="Instagram">Instagram</a>
-                    <a href="#" aria-label="GitHub">GitHub</a>
+                        <div class="about-features">
+                            <div class="about-feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Metodologia Agile/Scrum</span>
+                            </div>
+                            <div class="about-feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Suporte 24/7 dedicado</span>
+                            </div>
+                            <div class="about-feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>equipe Multidisciplinar</span>
+                            </div>
+                            <div class="about-feature">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 13l4 4L19 7"/>
+                                </svg>
+                                <span>Certificações ISO 27001</span>
+                            </div>
+                        </div>
+
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Converse com nossa equipe</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="about-visual" data-animate="fade-left">
+                        <div class="about-image">
+                            <img src="img/logo/imagem_2026-04-06_113404796-Photoroom.png" alt="Logo HELIX" loading="lazy">
+                        </div>
+                        <div class="about-decoration">
+                            <div class="decoration-circle"></div>
+                            <div class="decoration-dots"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 HELIX. Todos os direitos reservados.</p>
-            <p>Política de privacidade · Termos de uso</p>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section" aria-labelledby="cta-title">
+            <div class="container">
+                <div class="cta-box" data-animate="fade-up">
+                    <div class="cta-glow" aria-hidden="true"></div>
+                    <div class="cta-content">
+                        <h2 id="cta-title" class="cta-title">
+                            Pronto para transformar sua empresa?
+                        </h2>
+                        <p class="cta-description">
+                            Agende uma consultoria gratuita e descubra como podemos ajudar
+                            sua empresa a alcançar o próximo nível.
+                        </p>
+                        <div class="cta-actions">
+                            <a href="#contact" class="btn btn-white btn-lg">
+                                <span>Agendar Consultoria Gratuita</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                            <a href="tel:+551140028922" class="btn btn-ghost-white btn-lg">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2
+2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                                <span>(11) 4002-8922</span>
+                            </a>
+                        </div>
+                        <p class="cta-note">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            Respondemos em até 24 horas úteis
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section class="blog section" id="blog" aria-labelledby="blog-title">
+            <div class="container">
+                <header class="section-header" data-animate="fade-up">
+                    <span class="section-badge">Blog</span>
+                    <h2 id="blog-title" class="section-title">
+                        Insights e tendências
+                    </h2>
+                    <p class="section-description">
+                        Fique por dentro das últimas novidades em tecnologia e negócios digitais.
+                    </p>
+                </header>
+
+                <div class="blog-grid">
+                    <article class="blog-card blog-featured" data-animate="fade-up">
+                        <a href="#" class="blog-link">
+                            <div class="blog-image">
+                                <img src="img/elementos/blog1.avif" alt="Artigo sobre IA" loading="lazy">
+                                <span class="blog-category">Inteligência Artificial</span>
+                            </div>
+                            <div class="blog-content">
+                                <time class="blog-date">15 Jan 2026</time>
+                                <h3 class="blog-title">
+                                    Como a IA está transformando o desenvolvimento de software em 2026
+                                </h3>
+                                <p class="blog-excerpt">
+                                    Descubra as principais tendências de IA que estão revolucionando
+                                    a forma como empresas desenvolvem e deployam aplicações.
+                                </p>
+                                <span class="blog-read-more">
+                                    Ler artigo
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card" data-animate="fade-up" data-delay="100">
+                        <a href="#" class="blog-link">
+                            <div class="blog-image">
+                                <img src="img/elementos/blog2.png" alt="Artigo sobre automação" loading="lazy">
+                                <span class="blog-category">Automação</span>
+                            </div>
+                            <div class="blog-content">
+                                <time class="blog-date">10 Jan 2026</time>
+                                <h3 class="blog-title">
+                                    5 processos que você deve automatizar ainda este ano
+                                </h3>
+                                <p class="blog-excerpt">
+                                    Guia prático para identificar e automatizar tarefas repetitivas
+                                    que consomem tempo da sua equipe.
+                                </p>
+                                <span class="blog-read-more">
+                                    Ler artigo
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article class="blog-card" data-animate="fade-up" data-delay="200">
+                        <a href="#" class="blog-link">
+                            <div class="blog-image">
+                                <img src="img/elementos/blog3.png" alt="Artigo sobre segurança" loading="lazy">
+                                <span class="blog-category">Segurança</span>
+                            </div>
+                            <div class="blog-content">
+                                <time class="blog-date">05 Jan 2026</time>
+                                <h3 class="blog-title">
+                                    Cybersecurity em 2026: O que sua empresa precisa saber
+                                </h3>
+                                <p class="blog-excerpt">
+                                    As principais ameaças digitais e como se proteger de ataques
+                                    cada vez mais sofisticados.
+                                </p>
+                                <span class="blog-read-more">
+                                    Ler artigo
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info" data-animate="fade-right">
+                        <span class="section-badge">Contato</span>
+                        <h2 id="contact-title" class="section-title">
+                            Vamos conversar sobre
+                            <span class="gradient-text">seu projeto?</span>
+                        </h2>
+                        <p class="contact-description">
+                            Preencha o formulário e nossa equipe entrará em contato em até
+                            24 horas úteis com uma proposta personalizada.
+                        </p>
+
+                        <div class="contact-methods">
+                            <a href="mailto:contato@helix.com.br" class="contact-method">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="method-content">
+                                    <span class="method-label">Email</span>
+                                    <span class="method-value">contato@helix.com.br</span>
+                                </div>
+                            </a>
+
+                            <a href="tel:+551140028922" class="contact-method">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0
+01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                    </svg>
+                                </div>
+                                <div class="method-content">
+                                    <span class="method-label">Telefone</span>
+                                    <span class="method-value">(11) 4002-8922</span>
+                                </div>
+                            </a>
+
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                                <div class="method-content">
+                                    <span class="method-label">Localização</span>
+                                    <span class="method-value">São Paulo, SP - Brasil</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social">
+                            <span class="social-label">Siga-nos</span>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267
+5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0
+23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Instagram">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919
+4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741
+0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618
+6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010
+8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="GitHub">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207
+11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304
+3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404
+2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386
+0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm" data-animate="fade-left">
+                        <div class="form-header">
+                            <h3 class="form-title">Solicite uma proposta</h3>
+                            <p class="form-subtitle">Preencha os dados abaixo e retornaremos em breve</p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nome completo</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Seu nome" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Telefone</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="(11) 99999-9999">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company" class="form-label">Empresa</label>
+                            <input type="text" id="company" name="company" class="form-input" placeholder="Nome da empresa">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service" class="form-label">Serviço desejado</label>
+                            <select id="service" name="service" class="form-select" required>
+                                <option value="" disabled selected>Selecione uma opção</option>
+                                <option value="development">Desenvolvimento de Sistemas</option>
+                                <option value="automation">Automação de Processos</option>
+                                <option value="security">Segurança & Performance</option>
+                                <option value="consulting">Consultoria</option>
+                                <option value="other">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Conte-nos sobre seu projeto..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Enviar mensagem</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                            </svg>
+                        </button>
+
+                        <p class="form-privacy">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                            Seus dados estão seguros. Não compartilhamos informações.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <img src="./img/logo/imagem_2026-04-06_113404796-Photoroom.png" alt="HELIX" width="125px">
+                    </a>
+                    <p class="footer-tagline">
+                        Transformando ideias em soluções digitais de alto impacto desde 2018.
+                    </p>
+                    <div class="social-links">
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267
+5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0
+23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Instagram">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919
+4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741
+0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618
+6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010
+8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social-link" aria-label="GitHub">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207
+11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304
+3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404
+2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386
+0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                </div>
+
+                <nav class="footer-nav" aria-label="Links do rodapé">
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Produtos</h4>
+                        <ul class="footer-links">
+                            <li><a href="#solutions">Desenvolvimento</a></li>
+                            <li><a href="#solutions">Automação</a></li>
+                            <li><a href="#solutions">Segurança</a></li>
+                            <li><a href="#solutions">Consultoria</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Empresa</h4>
+                        <ul class="footer-links">
+                            <li><a href="#about">Sobre nós</a></li>
+                            <li><a href="#process">Como trabalhamos</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Carreiras</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Recursos</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Documentação</a></li>
+                            <li><a href="#">API Reference</a></li>
+                            <li><a href="#">Tutoriais</a></li>
+                            <li><a href="#">Suporte</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 class="footer-heading">Legal</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Política de Privacidade</a></li>
+                            <li><a href="#">Termos de Uso</a></li>
+                            <li><a href="#">Cookies</a></li>
+                            <li><a href="#">LGPD</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    © 2026 HELIX. Todos os direitos reservados.
+                </p>
+                <div class="footer-badges">
+                    <span class="badge-ssl">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                        SSL Seguro
+                    </span>
+                    <span class="badge-lgpd">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                        LGPD Compliant
+                    </span>
+                </div>
+            </div>
         </div>
     </footer>
-    
-    <script>
-        const navToggle = document.querySelector('.nav-toggle');
-        const mobileNav = document.getElementById('mobileNav');
-        navToggle.addEventListener('click', () => {
-            mobileNav.classList.toggle('open');
-            navToggle.classList.toggle('open');
-            navToggle.setAttribute('aria-expanded', mobileNav.classList.contains('open'));
-        });
-    </script>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
 </body>
 </html>
